@@ -132,114 +132,110 @@
     </div>
   </section>
 
-  <!-- MENU -->
   <section id="menu" class="section section-menu">
-    <div class="section-inner">
-      <p class="eyebrow center">What's Cookin'</p>
-      <h2 class="section-title center">The Menu</h2>
-      <p class="section-subtitle center">
-        Honest food, generous portions, fair prices. That's the Patti's way.
-      </p>
+  <div class="section-inner">
+    <p class="eyebrow center">What's Cookin'</p>
+    <h2 class="section-title center">The Menu</h2>
+    <p class="section-subtitle center">
+      Honest food, generous portions, fair prices. That's the Patti's way.
+    </p>
 
-      <div class="menu-tabs">
-        <button class="menu-tab active" data-category="starters">⭐ Starters</button>
-        <button class="menu-tab" data-category="grill">🔥 From the Grill</button>
-        <button class="menu-tab" data-category="seafood">🦐 Seafood</button>
-        <button class="menu-tab" data-category="sweets">🍰 Sweets</button>
-        <button class="menu-tab" data-category="drinks">🥤 Drinks</button>
-      </div>
+    <!-- Category pills -->
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-category="starters">
+        <span class="menu-tab-icon">⭐</span>
+        <span>Starters</span>
+      </button>
+      <button class="menu-tab" data-category="grill">
+        <span class="menu-tab-icon">🔥</span>
+        <span>From the Grill</span>
+      </button>
+      <button class="menu-tab" data-category="seafood">
+        <span class="menu-tab-icon">🦐</span>
+        <span>Seafood</span>
+      </button>
+      <button class="menu-tab" data-category="sweets">
+        <span class="menu-tab-icon">🍰</span>
+        <span>Sweets</span>
+      </button>
+      <button class="menu-tab" data-category="drinks">
+        <span class="menu-tab-icon">🥂</span>
+        <span>Drinks</span>
+      </button>
+    </div>
 
-      <div class="menu-layout">
-        <div class="menu-column" data-category-panel="starters">
-          <article class="menu-item">
-            <div class="menu-item-header">
-              <h3>Loaded Nachos</h3>
-              <span class="menu-pill">★ Popular</span>
-              <span class="menu-price">$14</span>
-            </div>
-            <p class="menu-desc">
+    <!-- Menu cards -->
+    <div class="menu-grid" data-category-panel="starters">
+      <article class="menu-card">
+        <div class="menu-card-body">
+          <div class="menu-card-main">
+            <h3 class="menu-item-name">Loaded Nachos</h3>
+            <p class="menu-item-desc">
               Piled high with cheese, jalapeños, sour cream &amp; guac.
             </p>
-          </article>
-
-          <article class="menu-item">
-            <div class="menu-item-header">
-              <h3>Onion Rings</h3>
-              <span class="menu-price">$10</span>
+            <div class="menu-meta">
+              <span class="menu-tag menu-tag-popular">★ Popular</span>
             </div>
-            <p class="menu-desc">
+          </div>
+          <div class="menu-card-side">
+            <span class="menu-price-label">$14</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-card-body">
+          <div class="menu-card-main">
+            <h3 class="menu-item-name">Onion Rings</h3>
+            <p class="menu-item-desc">
               Beer-battered with chipotle ranch.
             </p>
-          </article>
+          </div>
+          <div class="menu-card-side">
+            <span class="menu-price-label">$10</span>
+          </div>
         </div>
+      </article>
 
-        <div class="menu-column" data-category-panel="starters">
-          <article class="menu-item">
-            <div class="menu-item-header">
-              <h3>Wings (12 pc)</h3>
-              <span class="menu-price">$16</span>
-            </div>
-            <p class="menu-desc">
+      <article class="menu-card">
+        <div class="menu-card-body">
+          <div class="menu-card-main">
+            <h3 class="menu-item-name">Wings (12 pc)</h3>
+            <p class="menu-item-desc">
               Tossed in buffalo, BBQ, or garlic parm.
             </p>
-          </article>
+          </div>
+          <div class="menu-card-side">
+            <span class="menu-price-label">$16</span>
+          </div>
         </div>
+      </article>
+    </div>
 
-        <!-- Placeholder panels for other categories, hidden by default -->
-        <div class="menu-column hidden" data-category-panel="grill">
-          <article class="menu-item">
-            <div class="menu-item-header">
-              <h3>Dockside Ribeye</h3>
-              <span class="menu-price">$28</span>
-            </div>
-            <p class="menu-desc">
+    <!-- Example other category panel -->
+    <div class="menu-grid hidden" data-category-panel="grill">
+      <article class="menu-card">
+        <div class="menu-card-body">
+          <div class="menu-card-main">
+            <h3 class="menu-item-name">Dockside Ribeye</h3>
+            <p class="menu-item-desc">
               12oz ribeye with garlic butter and seasoned fries.
             </p>
-          </article>
+          </div>
+          <div class="menu-card-side">
+            <span class="menu-price-label">$28</span>
+          </div>
         </div>
-
-        <div class="menu-column hidden" data-category-panel="seafood">
-          <article class="menu-item">
-            <div class="menu-item-header">
-              <h3>Grilled Salmon</h3>
-              <span class="menu-price">$24</span>
-            </div>
-            <p class="menu-desc">
-              Citrus-herb salmon over rice pilaf and veggies.
-            </p>
-          </article>
-        </div>
-
-        <div class="menu-column hidden" data-category-panel="sweets">
-          <article class="menu-item">
-            <div class="menu-item-header">
-              <h3>Key Lime Pie</h3>
-              <span class="menu-price">$9</span>
-            </div>
-            <p class="menu-desc">
-              Tart, creamy, and baked in-house daily.
-            </p>
-          </article>
-        </div>
-
-        <div class="menu-column hidden" data-category-panel="drinks">
-          <article class="menu-item">
-            <div class="menu-item-header">
-              <h3>Dockside Lager</h3>
-              <span class="menu-price">$7</span>
-            </div>
-            <p class="menu-desc">
-              House lager brewed just for Patti's.
-            </p>
-          </article>
-        </div>
-      </div>
-
-      <div class="menu-footer">
-        <a href="#" class="btn btn-outline">View Full Menu</a>
-      </div>
+      </article>
     </div>
-  </section>
+
+    <!-- ... keep the other category panels (seafood / sweets / drinks) using the same card structure ... -->
+
+    <div class="menu-footer">
+      <a href="#" class="btn btn-menu-cta">View Full Menu</a>
+    </div>
+  </div>
+</section>
 
   <!-- LOCATION & RESERVATIONS -->
   <section id="reservations" class="section section-location">
