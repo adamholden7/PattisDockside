@@ -521,8 +521,8 @@ body {
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0 18px 40px rgba(15,23,42,0.35);
-  background: #000;
-  min-height: 320px;
+  background: #ffffff;       /* or remove this line entirely */
+  height: 320px;             /* fixed height works better with Google Maps */
 }
 
 .map-wrapper iframe {
