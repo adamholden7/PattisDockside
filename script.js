@@ -9,6 +9,8 @@ if (navToggle && navLinks) {
 }
 
 // Menu tab switching
+// (Replace your existing tab handler with this version)
+
 const tabs = document.querySelectorAll(".menu-tab");
 const panels = document.querySelectorAll("[data-category-panel]");
 
@@ -20,18 +22,14 @@ tabs.forEach(tab => {
     tab.classList.add("active");
 
     panels.forEach(panel => {
-      if (panel.getAttribute("data-category-panel") === category) {
-        panel.classList.remove("hidden");
-      } else if (panel.getAttribute("data-category-panel") === "starters" && category === "starters") {
-        panel.classList.remove("hidden");
-      } else if (category !== "starters" && panel.getAttribute("data-category-panel") === "starters") {
-        panel.classList.add("hidden");
-      } else {
-        panel.classList.add("hidden");
-      }
+      panel.classList.toggle(
+        "hidden",
+        panel.getAttribute("data-category-panel") !== category
+      );
     });
   });
 });
+
 
 // Footer year
 const yearEl = document.getElementById("year");
